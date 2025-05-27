@@ -1,0 +1,31 @@
+{
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.adminRole",
+      "description": "adminRole"
+    },
+    {
+      "name": "$XSAPPNAME.displayRole",
+      "description": "displayRole"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "adminRole",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.adminRole"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "displayRole",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.displayRole"
+      ],
+      "attribute-references": []
+    }
+  ]
+}

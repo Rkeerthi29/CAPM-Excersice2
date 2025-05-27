@@ -1,0 +1,82 @@
+### Read purchase order data
+
+GET http://localhost:4004/odata/v4/purchase-srv/PurchaseOrder
+
+### Create data record
+
+POST http://localhost:4004/odata/v4/purchase-srv/PurchaseOrder
+Content-Type: application/json
+
+{
+      "address": "Chennai",
+      "phone": "9874345634"
+}
+
+### Update
+
+PATCH http://localhost:4004/odata/v4/purchase-srv/PurchaseOrder/9fbc32a9-ab7d-4e94-b4d4-1f5eb6a70e14
+Content-Type: application/json
+
+{
+    "address": "Annanagarstreet"
+}
+
+###DELETE
+
+DELETE http://localhost:4004/odata/v4/purchase-srv/PurchaseOrder/9fbc32a9-ab7d-4e94-b4d4-1f5eb6a70e14
+
+###
+GET http://localhost:4004/odata/v4/purchase-srv/PurchaseOrder
+
+###
+
+PUT http://localhost:4004/odata/v4/purchase-srv/PurchaseOrder/07c71f42-791f-4a7d-8c1d-990224f32b53
+Content-Type: application/json
+
+{
+    "vendor_ID": "2218796b-c020-40fe-a290-4cff3ef04eff"
+}
+
+###
+GET http://localhost:4004/odata/v4/purchase-srv/PurchaseOrderItem
+
+###
+
+POST http://localhost:4004/odata/v4/purchase-srv/PurchaseOrderItem
+Content-Type: application/json
+
+{
+    "price": "1000",
+    "product": "Books",
+    "quantity": "-150"
+}
+
+###
+PATCH http://localhost:4004/odata/v4/purchase-srv/PurchaseOrderItem/07c71f42-791f-4a7d-8c1d-990224f32b53
+Content-Type: application/json
+
+{
+    "price": null
+}
+
+###
+GET http://localhost:4004/odata/v4/purchase-srv/Vendor
+
+
+
+
+###
+GET http://localhost:4004/odata/v4/purchase-srv/PurchaseOrderItem
+
+
+
+
+###
+PUT http://localhost:4004/odata/v4/purchase-srv/PurchaseOrderItem/05715be2-844c-4561-a228-48d3c1d81a7e
+Content-Type: application/json
+
+{   
+    "quantity": 10,
+    "price": 0
+}
+
